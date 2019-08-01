@@ -6,9 +6,19 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>My masterpiece</title>
     <link rel="stylesheet" href="./style.css">
+    <script src="//at.alicdn.com/t/font_1322253_f9b5393xm5t.js"></script>
+    <style type="text/css">
+        .icon {
+           width: 1em; height: 1em;
+           vertical-align: -0.15em;
+           fill: currentColor;
+           overflow: hidden;
+        }
+    </style>
 </head>
 <body>
-    <div class="topNavBar clearfix">
+    <div class="topNavBar">
+        <div class="topNavBar-inner clearfix">
         <a href="#" class="logo">
             <span class="rs">RS</span><span class="card">card</span>
         </a>
@@ -24,35 +34,70 @@
             </ul>
         </nav>
     </div>
-    <div class="banner" style="background-image: url(#)"></div>
+    </div>
+         <div class="banner">
+        <div class="mask"></div><!--这个地方设置div的遮层，要增加一个div，且将该div放置在banner图的里面，然后设置颜色以及透明度-->
+        </div> 
     <main>
-        <div class="card">
-            <div class="picAndText">
+        <div class="Usercard">
+            <div class="pAndT clearfix">
                 <div class="pic">
-                    <img src="#" alt="我的头像">
+                    <img src="./img/avatar.jpg" alt="我的头像">
                 </div>
                 <div class="txt">
-                    <div class="profile">
-                        <span class="welcome">HELLO</span>
+                    <!-- <div class="profile"> --><!--感觉是没有意义的div-->
+                        <span class="welcome">HELLO
+                            <span class="triangle"></span>
+                        </span>
                         <h1>方古月</h1>
                         <p>虽然慢，但是一步一步慢慢走，朝着正确的方向</p>
                         <hr>
-                        <dl>
+                        <dl class="clearfix">
                             <dt>姓名</dt><dd>方古月</dd>
                             <dt>地址</dt><dd>南阳</dd>
                             <dt>电话</dt><dd>111111</dd>
                             <dt>邮箱</dt><dd>222222</dd>
                         </dl>
-                    </div>
+                    <!-- </div> -->
                 </div>
             </div>
             
-            <footer></footer>
+            <footer>
+                <a href="">
+                    <svg class="icon" aria-hidden="true">
+                        <use xlink:href="#icon-twitter"></use>
+                    </svg>
+                </a>
+                <a href="">
+                        <svg class="icon" aria-hidden="true">
+                                <use xlink:href="#icon-icon_facebook"></use>
+                        </svg>
+                </a>
+                <a href="">
+                        <svg class="icon" aria-hidden="true">
+                                <use xlink:href="#icon-weixin"></use>
+                        </svg>
+                </a>
+                <a href="">
+                        <svg class="icon" aria-hidden="true">
+                                <use xlink:href="#icon-weibo"></use>
+                        </svg>
+                </a>
+                <a href="">
+                        <svg class="icon" aria-hidden="true">
+                                <use xlink:href="#icon-youxiang"></use>
+                        </svg>
+                </a>
+            </footer>
         </div>
         <a href="#" class="button">下载PDF简历</a>
         <p>你要相信你自己。</p>
     </main>
     <section></section>
     <section></section>
+    <div>
+        <p>djjdjsddkskks</p>
+        <h1>ddd</h1>
+    </div>
 </body>
 </html>

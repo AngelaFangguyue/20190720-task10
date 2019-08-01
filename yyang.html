@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>YinYang</title>
+    <style>
+        *{
+            margin:0;
+            padding:0;
+        }
+        div{
+            width:294px;
+            height:147px;
+            background-color: white;
+            border-top:3px solid red;
+            border-bottom:150px solid red;
+            border-left:3px solid red;
+            border-right:3px solid red;
+            border-radius:100%;
+            position: relative;
+        }
+        div:before{
+            position:absolute;
+            content:"";
+            top:50%;
+            left:0;
+            width:77px;
+            height:77px;
+            background-color:white;
+            border:35px solid red;
+            border-radius: 100%;
+        }
+        div:after{
+            position:absolute;
+            content: "";
+            top:50%;
+            left:50%;
+            width:77px;
+            height:77px;
+            background-color:red;
+            border:35px solid white;
+            border-radius: 100%;
+        }
+    </style>
+</head>
+<body>
+    <div></div>
+</body>
+</html>
